@@ -6,9 +6,8 @@ export default defineConfig({
             input: {
                 main: 'index.html',
                 course: 'course.html',
-                header: 'src/components/header/header.html',
-                footer: 'src/components/footer/footer.html',
-                mainJs: 'src/main.js',
+                header: 'src/html/header.html',
+                footer: 'src/html/footer.html',
             },
         },
     },
