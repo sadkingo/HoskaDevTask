@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- global css -->
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <!--  third party libraries -->
+    <link rel="stylesheet" href="src/assets/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="src/assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="src/assets/css/owl.theme.default.min.css" />
+    <title>هوسكا التعليمية</title>
+  </head>
+  <body
+    class="w-screen bg-bgColorBody flex flex-col bg-no-repeat bg-clip-border overflow-x-hidden items-center font-[Alexandria]"
+  >
+    <div id="header"></div>
+    <!-- ### Hero Section Start ### -->
+    <section
+      class="w-full h-[768px] relative flex items-center bg-[url('/images/hero-background.png')] bg-center bg-cover -mx-[50px] pt-[120px]"
+    >
+      <!-- background shadow -->
+      <div class="absolute inset-0 bg-shadowColor"></div>
+
+      <!-- hero carousel -->
+      <div
+        id="carouselContainer"
+        dir="ltr"
+        class="owl-carousel owl-theme owl-loaded text-white text-3xl h-full !flex flex-col mb-[50px] px-2 md:px-[100px]"
+      ></div>
+    </section>
+    <!-- ### Hero Section End ### -->
+
+    <!-- ### main section start ### -->
+    <section class="w-full flex flex-col items-center p-[35px] pe-[44px]">
+      <!-- container -->
+      <div
+        class="course-container relative bg-white rounded-[30px] h-72 flex-1 w-full"
+      >
+        <!-- section header -->
+        <div class="header flex justify-end relative max-md:justify-center">
+          <div
+            class="absolute top-0 start-0 bg-brandSecondary text-white text-2xl px-[50px] py-[15px] rounded-tr-[30px] rounded-bl-[30px]"
+          >
+            جميع الدورات
+          </div>
+          <!-- search -->
+          <div
+            class="search-group flex gap-[15px] mt-5 md:mx-[45px] max-md:mt-[100px]"
+          >
+            <form
+              class="flex border-none shadow-custom bg-white h-[60px] max-md:w-[280px] w-[370px] flex-row border rounded-[50px] focus-within:outline focus-within:outline-1 focus-within:outline-brandPrimary"
+            >
+              <input
+                id="search"
+                type="text"
+                class="flex-grow-2 flex-1 text-[14px] ps-[30px] py-[5px] rounded-r-[50px] text-black px-3 border-none focus:outline-none placeholder:text-black/75"
+                placeholder="إبحث عن دورة"
+              />
+              <button
+                class="border w-[60px] h-[60px] hover:bg-hotColor hover:border-hotColor border-brandPrimary bg-brandPrimary rounded-full text-white"
+              >
+                <span class="mdi mdi-magnify text-3xl"></span>
+              </button>
+            </form>
+            <button
+              class="shadow-custom rounded-full h-[60px] w-[60px] p-[14px] flex justify-center items-center overflow-hidden bg-white"
+            >
+              <div
+                class="mdi mdi-tune w-8 h-8 mb-3 text-brandSecondary text-[32px]"
+              ></div>
+            </button>
+          </div>
+        </div>
+        <div class="p-4" id="courseCardsContainer"></div>
+      </div>
+    </section>
+    <!-- ### main section start ### -->
+    <div id="footer"></div>
+
+    <!-- ### main component loader/entrypoint ### -->
+    <script type="module" src="/src/loader.js"></script>
+
+    <!-- ### third party libraries ### -->
+    <script src="src/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="src/assets/js/owl.carousel.min.js"></script>
+  </body>
+</html>

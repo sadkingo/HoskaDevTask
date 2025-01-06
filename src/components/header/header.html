@@ -1,0 +1,111 @@
+<!-- ### Header Start ### -->
+<header
+  class="flex z-10 justify-between text-xl items-center font-[Alexandria] pt-[30px] text-white absolute top-0 px-[50px] w-full"
+>
+  <!-- ### logo group start ### -->
+  <div class="logo-group hover:opacity-85">
+    <a href="/" class="logo flex justify-center items-center gap-[21px]">
+      <img
+        class="w-[77px] h-[77px] max-lg:h-[45px] max-lg:w-[45px]"
+        src="/images/icon.png"
+        alt="logo"
+      />
+      <span class="text-4xl max-lg:text-2xl text-white hover:text-brandPrimary">
+        منصتي
+      </span>
+    </a>
+  </div>
+  <!-- ### logo group end ### -->
+  <!-- ### Header menus start ### -->
+  <div id="menus" class="flex gap-[30px] max-lg:hidden">
+    <a class="hover:text-brandPrimary" href="/">الرئيسية</a>
+    <span class="spliter">|</span>
+    <a class="hover:text-brandPrimary" href="/course.html">الدورات</a>
+    <span class="spliter">|</span>
+    <a class="hover:text-brandPrimary" href="#">المقالات</a>
+  </div>
+  <!-- ### Header menus end ### -->
+  <!-- ### Auth buttons group start ### -->
+  <form action="#" class="auth-buttons-group flex gap-[30px] max-lg:hidden">
+    <button class="hover:text-brandPrimary">تسجيل الدخول</button>
+    <button
+      class="hover:opacity-85 px-[25px] py-[12px] bg-brandPrimary hover:bg-hotColor rounded-[30px]"
+    >
+      حساب جديد
+    </button>
+  </form>
+  <!-- ### Auth buttons end ### -->
+
+  <!-- ### Mobile nav start ###-->
+  <div class="mobile-nav hidden max-lg:flex transition-[translate-x]">
+    <button
+      class="mdi mdi-menu text-4xl hover:text-brandPrimary"
+      id="burger"
+    ></button>
+
+    <!-- mobile menu -->
+    <div
+      class="menu -ms-2 opacity-0 hidden translate-x-full transition-all duration-500 absolute inset-0 w-screen h-screen bg-brandPrimary"
+      id="mobileNav"
+    >
+      <button
+        class="mdi mdi-close z-10 text-4xl absolute left-12 top-7 text-brandSecondary hover:text-orange-600"
+        id="closeButton"
+      ></button>
+
+      <!-- menu Logo -->
+      <div class="logo-group bg-white p-5">
+        <a
+          href="/"
+          class="logo w-fit flex justify-center items-center gap-[21px]"
+        >
+          <img
+            class="w-[77px] h-[77px] max-lg:h-[45px] max-lg:w-[45px]"
+            src="/images/icon.png"
+            alt="logo"
+          />
+          <span
+            class="text-4xl max-lg:text-2xl text-brandSecondary hover:text-brandPrimary"
+          >
+            منصتي
+          </span>
+        </a>
+        <!-- menus -->
+      </div>
+      <div class="w-full text-center p-2">التنقل</div>
+      <a
+        href="/"
+        class="w-full block p-2 text-white text-center cursor-pointer hover:opacity-80 bg-hotColor"
+      >
+        الرئيسية
+      </a>
+      <a
+        href="/course.html"
+        class="w-full block p-2 text-white text-center cursor-pointer hover:opacity-80 bg-hotColor"
+      >
+        الدورات
+      </a>
+      <a
+        href="#"
+        class="w-full block p-2 text-white text-center cursor-pointer hover:opacity-80 bg-hotColor"
+      >
+        المقالات
+      </a>
+      <div class="w-full text-center p-2">التسجيل</div>
+      <a
+        href="#"
+        class="w-full block p-2 text-white text-center cursor-pointer hover:opacity-80 bg-hotColor"
+      >
+        تسجيل الدخول
+      </a>
+      <a
+        href="#"
+        class="w-full block p-2 text-white text-center cursor-pointer hover:opacity-80 bg-hotColor"
+      >
+        حساب جديد
+      </a>
+    </div>
+  </div>
+  <!-- ### Mobile nav end ###-->
+</header>
+<!-- ### Header End ### -->
