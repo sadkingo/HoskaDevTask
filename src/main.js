@@ -64,8 +64,10 @@ $(document).ready(function () {
     // get course detail
     const urlParams = new URLSearchParams(window.location.search);
     const courseId = urlParams.get('id');
-    if (!courseId && window.location.pathname === '/course.html') {
-        window.location.href = '/';
+    if (!courseId) {
+        if (window.location.pathname === '/course.html')
+            window.location.href = '/';
+        return
     }
 
     $.get(`https://test-api.mapiner.tech/api/course/${courseId}`, function (response) {
