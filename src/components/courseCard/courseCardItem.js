@@ -7,7 +7,7 @@ const imagesUrls = [
 ]
 function renderCourseCardItem(course, index) {
     return `
-        <div class="flex flex-col w-[380px] rounded-[35px] shadow-custom">
+        <div class="flex flex-col w-[380px] rounded-[35px] hover:scale-105 transition-transform duration-500 shadow-custom">
             <img class="w-[380px] rounded-t-[35px] h-[250px]" src="${imagesUrls[index % imagesUrls.length]}" alt="${escapeHtml(course.name)}" class="w-full h-48 object-cover rounded-lg">
             <div class="relative p-5 flex flex-col gap-[10px]">
                 <span class="text-[20px] font-semibold ">${escapeHtml(course.name)}</span>
@@ -46,7 +46,7 @@ function renderCourseCardItem(course, index) {
                     <span>جديد</span>
                 </span>
                 <!-- button -->
-                <a href="course.html?id=${escapeHtml(course.id)}" class="absolute bottom-0 end-0 bg-brandSecondary text-white font-semibold rounded-bl-[36px] rounded-tr-[36px] px-[45px] py-[19px]">
+                <a href="course.html?id=${escapeHtml(course.id)}" class="absolute bottom-0 end-0 bg-brandSecondary hover:bg-hotColor text-white font-semibold rounded-bl-[36px] rounded-tr-[36px] px-[45px] py-[19px]">
                     <span>تفاصيل ...</span>
                 </a>
             </div>
