@@ -11,7 +11,7 @@ function renderCourseCarouselItem(course) {
             <div class="description max-w-[500px] text-2xl max-md:text-center">
                 ${escapeHtml(course.description)}
             </div>
-            <a class="w-fit flex gap-[5px] text-2xl font-bold px-7 py-[14px] rounded-full bg-brandPrimary hover:bg-hotColor mt-5" href="/course.html?course=${encodeURIComponent(course.id)}">
+            <a class="w-fit flex gap-[5px] text-2xl font-bold px-7 py-[14px] rounded-full bg-brandPrimary hover:bg-hotColor mt-5" href="/course.html?id=${encodeURIComponent(course.id)}">
                 <button class="flex justify-center items-center">
                     <div class="mb-1">تفاصيل الدورة</div>
                     <div class="mdi mdi-chevron-left"></div>
