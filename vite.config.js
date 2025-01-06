@@ -8,6 +8,7 @@ export default defineConfig({
                 course: 'course.html',
                 header: 'src/components/header/header.html',
                 footer: 'src/components/footer/footer.html',
+                mainJs: 'src/main.js',
             },
         },
     },
