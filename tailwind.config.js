@@ -23,6 +23,9 @@ export default {
       boxShadow: {
         'custom': '0px 2px 10px 0px rgba(0, 0, 0, 0.14)',
       },
+      screens: {
+        'xs': '480px',
+      },
     },
   },
   plugins: [],

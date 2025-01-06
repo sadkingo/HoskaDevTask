@@ -7,7 +7,7 @@ function renderCourseCarouselItem(course) {
                 <span class="mdi mdi-fire"></span>
                 <span class="text-[13px]">رائج الآن</span>
             </div>
-            <div class="title text-4xl">${escapeHtml(course.name)}</div>
+            <div class="title text-4xl max-md:text-center">${escapeHtml(course.name)}</div>
             <div class="description max-w-[500px] text-2xl max-md:text-center">
                 ${escapeHtml(course.description)}
             </div>
