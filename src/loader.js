@@ -1,3 +1,4 @@
+import main from "./main"
 function loadComponent(id, file) {
     return fetch(file)
         .then(response => response.text())
@@ -10,15 +11,8 @@ function loadComponent(id, file) {
         });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    loadComponent('header', 'src/components/header/header.html');
-    loadComponent('footer', 'src/components/footer/footer.html').then(
-        () => {
-            // load main.js
-            const script = document.createElement('script');
-            script.src = 'src/main.js';
-            script.type = 'module';
-            document.body.appendChild(script);
-        }
-    );
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadComponent('header', 'src/html/header.html');
+    await loadComponent('footer', 'src/html/footer.html');
+    main();
 });
